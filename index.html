@@ -33,10 +33,12 @@
 
         <div id="popup">
             <h2>Add Your Note</h2>
-            <label for="noteTitle">Title</label><input type="text" id="noteTitle">
-            <label for="noteOwner">Owner</label><input type="text" id="noteOwner">
-            <label for="noteContent">Notes</label><textarea id="noteContent"></textarea>
-            <button id="add" onclick="addNote()">Add</button>
+            <form>
+              <label for="noteTitle">Title</label><input type="text" id="noteTitle">
+              <label for="noteOwner">Owner</label><input type="text" id="noteOwner">
+              <label for="noteContent">Notes</label><textarea id="noteContent"></textarea>
+              <button id="add" onclick="addNote()">Add</button>
+            </form>
         </div>
 
         <button class="adder" onclick="overlay()">+</button>
