@@ -27,7 +27,7 @@ h1{
 
 .default-note{
     width: 21%;
-    min-width: 220px;
+    min-width: 250px;
     background-color: rgb(207, 231, 251);
     border-radius: 20px;
     padding: 15px;
@@ -110,6 +110,7 @@ h1{
     width: 40%;
     left: 30%;
     top: 25%;
+    min-width: 250px;
     z-index: 2;
     background-color: rgb(50, 50, 237);
     color: white;
@@ -148,6 +149,7 @@ h1{
 
 #popup button{
     width: 12%;
+    min-width: 50px;
     height: 25px;
     border: none;
     border-radius: 10px;
