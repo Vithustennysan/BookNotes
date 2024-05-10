@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book_Notes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="notebook.png" type="image/x-icon">
+  </head>
+  <body>
+    <h1>Book Notes</h1>
+
+    <div id="container">
+        <div class="default-note" >
+            <h2>JAMES WEB</h2>
+            <h4>Nasa</h4>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            alias esse consectetur, ipsum ut exercitationem molestiae iste officia
+            quas quae beatae, sed vitae! Necessitatib
+            </p>
+            <button onclick="remove(event)">Delete</button>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div id="popup">
+            <h2>Add Your Note</h2>
+            <label for="noteTitle">Title</label><input type="text" id="noteTitle">
+            <label for="noteOwner">Owner</label><input type="text" id="noteOwner">
+            <label for="noteContent">Notes</label><textarea id="noteContent"></textarea>
+            <button id="add" onclick="addNote()">Add</button>
+        </div>
+
+        <button class="adder" onclick="overlay()">+</button>
+        <button class="adder" id="remover" onclick="removeOverlay()">X</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
