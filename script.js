@@ -21,6 +21,10 @@ function clearNote() {
     document.getElementById("noteOwner").value = ""
     document.getElementById("noteContent").value = ""
 }
+
+let addbtn = document.getElementById("add")
+addbtn.addEventListener("click", (event) => event.preventDefault())
+
 function addNote() {
 
     let div = document.createElement("div")
