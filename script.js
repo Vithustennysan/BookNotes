@@ -47,6 +47,7 @@ function addNote() {
         div.append(btn)
         container.append(div)
         clearNote()
+        removeOverlay()
     }else{
         alert("Fill all the blanks!")
     }
